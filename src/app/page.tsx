@@ -1,14 +1,29 @@
-import Hero from "../components/Hero"
-import Navbar from '../components/Navbar'
-
+import Hero from "../components/Hero";
+import AboutMe from "../components/AboutMe";
+import Projects from "../components/Projects";
+import Navbar from "../components/Navbar";
+import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col bg-[#C0C2C9]">
-      <Navbar/>
-      <div className="container mt-24 mx-auto px-12 py-4">
-        <Hero/>
-      </div>
-    </main>
+    <div>
+      <Navbar />
+      <main className="flex flex-col min-h-screen">
+        <div className="container mx-auto mt-24 px-12 py-4">
+          <Hero />
+        </div>
+        <div className="container mx-auto px-12 py-4">
+          <AboutMe />
+        </div>
+        <div className="container mx-auto px-12 py-4">
+          <Projects />
+        </div>
+        <div className="container mx-auto px-12 py-4">
+          <Contact />
+        </div>
+      </main>
+      <Footer />
+    </div>
   );
 }
