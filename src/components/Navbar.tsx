@@ -6,7 +6,7 @@ import { Separator } from "@/components/ui/separator"
 
 export function Navbar() {
   return (
-    <div>
+    <div className="bg-card" >
       <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem className="p-4">

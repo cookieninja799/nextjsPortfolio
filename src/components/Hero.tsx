@@ -17,7 +17,7 @@ const HeroSection: React.FC = () => {
           className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
         >
           <h1 className="scroll-m-20 mb-4 text-3xl sm:text-4xl lg:text-7xl lg:leading-normal font-extrabold">
-            <span className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">
+            <span className="bg-gradient-to-r from-primary to-primary inline-block text-transparent bg-clip-text">
               Hello, I&apos;m
             </span>
             <br></br>
