@@ -17,7 +17,7 @@ const HeroSection: React.FC = () => {
           className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
         >
           <h1 className="scroll-m-20 mb-4 text-3xl sm:text-4xl lg:text-7xl lg:leading-normal font-extrabold">
-            <span className="bg-gradient-to-r from-primary to-primary inline-block text-transparent bg-clip-text">
+            <span className="bg-gradient-to-r from-foreground via-primary to-foreground inline-block text-transparent bg-clip-text">
               Hello, I&apos;m
             </span>
             <br></br>
@@ -41,8 +41,8 @@ const HeroSection: React.FC = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptuous.
           </p>
           <div className="lg:space-x-4"> 
-            <Button>Hire Me</Button>
-            <Button variant="secondary">Download CV</Button>
+            <Button size="lg">Hire Me</Button>
+            <Button variant="secondary" size="lg">Download CV</Button>
           </div>
         </motion.div>
         <motion.div

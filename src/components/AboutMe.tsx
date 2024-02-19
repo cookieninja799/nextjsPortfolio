@@ -6,7 +6,6 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 
-
 const AboutMe: React.FC = () => {
   return (
     <div>

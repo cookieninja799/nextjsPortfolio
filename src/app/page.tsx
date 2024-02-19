@@ -4,7 +4,6 @@ import Projects from "../components/Projects";
 import Navbar from "../components/Navbar";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
-import { Separator } from "@/components/ui/separator"
 
 export default function Home() {
   return (
@@ -13,7 +12,7 @@ export default function Home() {
         <Navbar />
       </div>
       <main className="flex flex-col min-h-screen">
-        <div id="hero" className="container mx-auto mt-24 px-12 py-4">
+        <div id="hero" className="container mx-auto px-12 py-4">
           <Hero />
         </div>
         <div id="about" className="container mx-auto px-12 py-4">
