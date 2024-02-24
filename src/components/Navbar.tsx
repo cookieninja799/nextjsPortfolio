@@ -2,16 +2,13 @@
 import * as React from "react";
 import { NavigationMenu, NavigationMenuList, NavigationMenuItem, NavigationMenuLink } from "@/components/ui/navigation-menu";
 import { ModeToggle } from "@/components/DarkMode";
-import { Separator } from "@/components/ui/separator"
 import { Button } from "./ui/button";
 
 export function Navbar() {
   return (
-    <div className="bg-card">
+    <div className="bg-card flex items-center justify-between w-full">
       <NavigationMenu>
         <NavigationMenuList className="flex justify-between items-center w-full">
-          <div className="flex">
-            {/* Navigation items */}
             <NavigationMenuItem className="p-4">
               <NavigationMenuLink href="#hero">
                 <Button className="scroll-m-20 text-xl font-extrabold tracking-tight" variant="link">Home</Button>
@@ -32,13 +29,11 @@ export function Navbar() {
                 <Button className="scroll-m-20 text-xl font-extrabold tracking-tight" variant="link">Contact</Button>
               </NavigationMenuLink>
             </NavigationMenuItem>
-          </div>
-
-          {/* ModeToggle on the far right */}
-          <ModeToggle />
         </NavigationMenuList>
       </NavigationMenu>
-      <Separator/>
+      <div className="m-4">
+      <ModeToggle/>
+      </div>
     </div>
   );
 }
