@@ -1,3 +1,4 @@
+"use client"
 import React from 'react';
 import { PinTopIcon } from "@radix-ui/react-icons"
 import { Button } from "@/components/ui/button"

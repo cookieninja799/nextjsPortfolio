@@ -40,7 +40,7 @@ const HeroSection: React.FC = () => {
           <p className="text-base sm:text-lg mb-6 lg:text-xl">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptuous.
           </p>
-          <div className="lg:space-x-4"> 
+          <div className="space-x-4"> 
             <Button size="lg">Hire Me</Button>
             <Button variant="secondary" size="lg">Download CV</Button>
           </div>

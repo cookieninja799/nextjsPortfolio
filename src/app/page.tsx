@@ -1,4 +1,3 @@
-"use client"
 import Hero from "../components/Hero";
 import AboutMe from "../components/AboutMe";
 import Projects from "../components/Projects";
@@ -10,7 +9,6 @@ import TopPageBtn from "@/components/TopPageBtn";
 export default function Home() {
   return (
     <div style={{ position: 'relative', width: '100vw', height: '100%', overflow: 'visible' }}>
-      
       <div style={{ position: 'relative', zIndex: 1 }}>
         <div className="sticky top-0 z-10">
           <Navbar />

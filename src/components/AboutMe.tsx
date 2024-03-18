@@ -11,10 +11,7 @@ const AboutMe: React.FC = () => {
     <div>
       <Card className='p-4'>
         <CardTitle className="scroll-m-20 mb-4 text-3xl sm:text-4xl lg:text-7xl lg:leading-normal font-extrabold">
-        <span className="bg-gradient-to-r from-primary to-primary inline-block text-transparent bg-clip-text">
           About Me
-        </span>
-        
         </CardTitle>
         <CardDescription className='m-4'>Your brief introduction goes here...</CardDescription>
         <Tabs defaultValue="skills" className="w-full">
