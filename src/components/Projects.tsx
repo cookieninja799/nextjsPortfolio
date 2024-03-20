@@ -1,12 +1,18 @@
+"use client"
 import React from 'react';
 import { CarouselItem, CarouselContent, CarouselPrevious, CarouselNext, Carousel } from "@/components/ui/carousel"
-import { AspectRatio } from './ui/aspect-ratio';
+import { Button } from './ui/button';
 import Image from 'next/image';
+
 interface ProjectProps {
   // Define your prop types here
 }
 
 const Project: React.FC<ProjectProps> = (props) => {
+  // Function to handle navigation
+  const redirectToGithub = (url: string) => {
+    window.open(url, '_blank');
+  };
   return (
     <div>
       <section className="w-full py-12">
@@ -23,19 +29,22 @@ const Project: React.FC<ProjectProps> = (props) => {
             <div className="w-full max-w-sm">
               <Carousel>
                 <CarouselContent>
-                  <CarouselItem className="overflow-hidden rounded-xl">
-                    <div className="aspect-video overflow-hidden rounded-xl">
+                  <CarouselItem>
+                    <div className="relative aspect-video overflow-hidden rounded-xl">
                           <Image
                             alt='neoApp'
-                            className="object-cover"
+                            className="object-cover" 
                             width='400'
                             height= '300'
                             src="/Screenshot_4.jpg"
                           />
+                          <Button onClick={() => redirectToGithub('https://github.com/cookieninja799/neoApp')} variant="outline" className="absolute inset-0 h-full w-full overflow-hidden bg-gradient opacity-0 transition-opacity duration-300 ease-in-out hover:opacity-70 rounded-xl">
+                            NEO app
+                          </Button>
                     </div>
                   </CarouselItem>
                   <CarouselItem>
-                    <div className="aspect-video overflow-hidden rounded-xl">
+                    <div className="relative aspect-video overflow-hidden rounded-xl">
                       <Image
                         alt='portfolio'
                         className="object-cover"
@@ -43,17 +52,23 @@ const Project: React.FC<ProjectProps> = (props) => {
                         height= '300'
                         src="/Screenshot_5.jpg"
                       />
+                      <Button variant="outline" className="absolute inset-0 h-full w-full overflow-hidden bg-gradient opacity-0 transition-opacity duration-300 ease-in-out hover:opacity-70 rounded-xl">
+                        Portfolio
+                      </Button>
                     </div>
                   </CarouselItem>
                   <CarouselItem>
-                    <div className="aspect-video overflow-hidden rounded-xl">
+                    <div className="relative aspect-video overflow-hidden rounded-xl">
                           <Image
-                            alt='neoApp'
+                            alt='anotherProject'
                             className="object-cover"
                             width='400'
                             height= '300'
-                            src="/Screenshot_4.jpg"
+                            src="/Screenshot_6.jpg"
                           />
+                          <Button variant="outline" className="absolute inset-0 h-full w-full overflow-hidden bg-gradient opacity-0 transition-opacity duration-300 ease-in-out hover:opacity-70 rounded-xl">
+                            Another Project
+                          </Button>
                     </div>
                   </CarouselItem>
                 </CarouselContent>
