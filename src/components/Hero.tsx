@@ -25,11 +25,11 @@ const HeroSection: React.FC = () => {
               sequence={[
                 "Thommy",
                 1000,
-                "a Web Developer",
+                "a Full-Stack Engineer",
+                1000,
+                "an AI Integration Developer",
                 1000,
                 "a Software Developer",
-                1000,
-                "a Generative AI Developer",
                 1000,
               ]}
               wrapper="span"
@@ -38,11 +38,11 @@ const HeroSection: React.FC = () => {
             />
           </h1>
           <p className="text-base sm:text-lg mb-6 lg:text-xl">
-            Welcome to my Portfolio!
+            Full-stack engineer building SaaS products with Vue, Node.js, and AWS — with a focus on AI integrations.
           </p>
-          <div className="space-x-4"> 
-            <Button size="lg">Hire Me</Button>
-            <Button variant="secondary" size="lg">Download CV</Button>
+          <div className="space-x-4">
+            <Button size="lg" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>Hire Me</Button>
+            <Button variant="secondary" size="lg" asChild><a href="/resume.pdf" download>Download CV</a></Button>
           </div>
         </motion.div>
         <motion.div
