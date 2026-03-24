@@ -9,24 +9,24 @@ export function Navbar() {
     <div className="bg-card flex items-center justify-between w-full">
       <NavigationMenu>
         <NavigationMenuList className="flex justify-between items-center w-full">
-            <NavigationMenuItem className="p-4">
+            <NavigationMenuItem className="p-2 sm:p-4">
               <NavigationMenuLink href="#hero">
-                <Button className="scroll-m-20 text-xl font-extrabold tracking-tight" variant="link">Home</Button>
+                <Button className="scroll-m-20 text-sm sm:text-xl font-extrabold tracking-tight" variant="link">Home</Button>
               </NavigationMenuLink>
             </NavigationMenuItem>
-            <NavigationMenuItem className="p-4">
+            <NavigationMenuItem className="p-2 sm:p-4">
               <NavigationMenuLink href="#about">
-                <Button className="scroll-m-20 text-xl font-extrabold tracking-tight" variant="link">About</Button>
+                <Button className="scroll-m-20 text-sm sm:text-xl font-extrabold tracking-tight" variant="link">About</Button>
               </NavigationMenuLink>
             </NavigationMenuItem>
-            <NavigationMenuItem className="p-4">
+            <NavigationMenuItem className="p-2 sm:p-4">
               <NavigationMenuLink href="#projects">
-                <Button className="scroll-m-20 text-xl font-extrabold tracking-tight" variant="link">Projects</Button>
+                <Button className="scroll-m-20 text-sm sm:text-xl font-extrabold tracking-tight" variant="link">Projects</Button>
               </NavigationMenuLink>
             </NavigationMenuItem>
-            <NavigationMenuItem className="p-4">
+            <NavigationMenuItem className="p-2 sm:p-4">
               <NavigationMenuLink href="#contact">
-                <Button className="scroll-m-20 text-xl font-extrabold tracking-tight" variant="link">Contact</Button>
+                <Button className="scroll-m-20 text-sm sm:text-xl font-extrabold tracking-tight" variant="link">Contact</Button>
               </NavigationMenuLink>
             </NavigationMenuItem>
         </NavigationMenuList>

@@ -8,22 +8,22 @@ import TopPageBtn from "@/components/TopPageBtn";
 
 export default function Home() {
   return (
-    <div style={{ position: 'relative', width: '100vw', height: '100%', overflow: 'visible' }}>
-      <div style={{ position: 'relative', zIndex: 1 }}>
+    <div className="relative w-full">
+      <div className="relative" style={{ zIndex: 1 }}>
         <div className="sticky top-0 z-10">
           <Navbar />
         </div>
         <main className="flex flex-col min-h-screen">
-          <div id="hero" className="container mx-auto px-12 py-4">
+          <div id="hero" className="container mx-auto px-4 sm:px-8 lg:px-12 py-4">
             <Hero />
           </div>
-          <div id="about" className="container mx-auto px-12 py-4">
+          <div id="about" className="container mx-auto px-4 sm:px-8 lg:px-12 py-4">
             <AboutMe />
           </div>
-          <div id="projects" className="container mx-auto px-12 py-4">
+          <div id="projects" className="container mx-auto px-4 sm:px-8 lg:px-12 py-4">
             <Projects />
           </div>
-          <div id="contact" className="container mx-auto px-12 py-4">
+          <div id="contact" className="container mx-auto px-4 sm:px-8 lg:px-12 py-4">
             <Contact />
           </div>
         </main>
