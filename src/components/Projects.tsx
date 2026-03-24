@@ -44,10 +44,10 @@ const Project: React.FC<ProjectProps> = (props) => {
                         </Button>
                       </div>
                       <div className="p-4">
-                        <h3 className="font-semibold text-base mb-1">NEO App</h3>
-                        <p className="text-sm text-muted-foreground mb-3">A React Native mobile app for tracking and discovering deals on running shoes, powered by automated scrapers.</p>
+                        <h3 className="font-semibold text-base mb-1">NEO Tracker</h3>
+                        <p className="text-sm text-muted-foreground mb-3">A Next.js web app for tracking Near Earth Objects using NASA&apos;s API, featuring an interactive dashboard and 3D globe visualization of NEO trajectories built with React-globe.gl.</p>
                         <div className="flex flex-wrap gap-1">
-                          {['React Native', 'Node.js', 'PostgreSQL'].map(tag => (
+                          {['Next.js', 'React', 'NASA API', 'React-globe.gl'].map(tag => (
                             <span key={tag} className="text-xs px-2 py-0.5 rounded-full border">{tag}</span>
                           ))}
                         </div>
